@@ -1,0 +1,111 @@
+---------------------------------------------------------------------------
+core concepts of block chain:
+-----------------------------
+	1.digital ledger technology(dlt):
+		-when we perform a transaction records called blocks.they 		will stored in a linear chain.each block will link to the 		previous blocks using cryptography hashes.this chain is 		called a ledger and is distributes across the network of 		computers known as nodes.so that no single entity has 			control over the entire chain.
+
+	2.decentralization:
+		-instead of stored in central database,the block chain is 		replicated across many nodes in the network.
+		-it ensures that there is no point of failure.even a node 		get failed or compromised, the network continues to 			function.
+
+	3.security and immutability:
+		-cryptographic hashing:
+			->each block contains the hashcode,timestamp and 			  transaction data of the previous block.as hashing 			  used it creates a unique digital fingerprint for 			  the data and it is exteremly difficult to alter 			  the data.
+		-consensus mechanism:
+			->nodes in the network must agree on the validity 			of new blocks through consensus mechanisms like 			proof of work(PoW).or proof of stake(PoS).
+				>>PoW: computers compete to solve complex 				mathematical puzzles.this process requires 				a lot of computational power and energy.
+				>>PoS:in pos validators are choosen to 					create new blocks based on the number of 				cryptocurrency tokens they hold.the more 				tokens a validator stakes the higher their 				chance to add the nxt block to the 					blockchain.
+		-immutability:
+			->once a block is added to the network it is 				impossible to alter the data.because change would 			require in all the subsequent blocks.
+---------------------------------------------------------------------------
+How Blockchain Works:
+----------------------
+	1.Transaction Initiation:
+		-A user requests a transaction,which is then broadcast to 		the network of nodes.
+	2.Verification:
+		-the network of nodes validates the transaction using 			algorithms and consensus mechanism.nodes check that the 		transaction is legitimate and that the user has the 			necessary assets.
+	3.Block Creation:
+		-once verified the transaction is combined with other 			transactions to form a new block.this block is then added 		to the blockchain.
+	4.Hashing and linking:
+		-the new block contains a hash of the previous block.this 		linking ensures the integrity of the entire blockchain.
+	5.consensus and propagation:
+		-nodes in the network reach consensus on the new blocks 		validity.once consensus is achived,the block is added to 		each nodes copy of the blockchain,a nd the transaction is 		complete.
+---------------------------------------------------------------------------
+Advantages of Blockchain:
+-------------------------
+	1.Transparency and Trust:
+		-all transactions are recorded on a public ledger,making it 		easy to track and verify them.
+	2.Security:
+	3.Decentralization:
+	4.Efficiency and Speed:
+		-Blockchain can streamline processes and reduce the need 		for intermediaries,making transactions faster and more 			cost-effective.
+---------------------------------------------------------------------------
+Applications of Blockchain:
+---------------------------
+	1.Cryptocurrencies.
+	2.Smart Contracts.
+	3.Supply Chain Management.
+	4.Voting Systems.
+	5.Health care.
+---------------------------------------------------------------------------
+Questions on Blockchain:
+------------------------
+	1.What is a smart contract?
+	->smart contract is a lines of code.that automatically execute the 	terms and conditions of an agreement when predefined conditions are 	met.
+
+	2.What steps are involved in implementing smart contracts for land 	  registration?
+	->1.designing a smart contract architecture.
+	->2.Digitizing land records and migrating them to the block chain.
+	->3.Developing a user interface for the users.
+
+	3.Infrastructure required to support blockchain based land 		  registration?
+	->requires a blockchain platform like Ethereum or 	Hyperledger,digital storage solutions,user interface to interact 	with block chain,secure communication networks,and cubersecurity 	measures.
+
+	4.Further enhancements?
+	->integration with IoT devices for real-time property monitoring 	could further enhance land registration.
+	
+	5.Difference between public and private block chain.
+	->A public blockchain is a permissionless blockchain where anyone 	can join the network and participate in the consensus process.
+	->A private blockchain is permissioned,only selected entities can 	join the network,making it more cemtralized than public blockchains
+	
+	6.What is consensus mechanism?
+	->it is a process used by blockchain netwroks to achieve an 	agreement from the blocks to add the new block.
+	->common consensus mechanisms are Pow,Pos,Delegated PoS(DPoS).
+
+	7.Can blockchain be hacked?
+	->blockchain itself is a highly secured due to its decentralized 	nature and cryptographic principles.but individual enities like 	smart contracts or wallets can be vulnerable to hacking if not 	properly secured.
+	
+	8.what is blockchain fork?
+	->A fork in blockchain is a situation where the blockchain diverges 	into two separate paths due to changes in protocol rules.
+	->forks can be categorized as hard forks(permanent divergence) or 	soft forks(temporary divergence).
+---------------------------------------------------------------------------
+Smart contracts related questions:
+----------------------------------
+1.smart contracts for land registration?
+->ownership and transfer management
+->land title verification
+->Transaction History
+
+2.Solidity language is used to write the smart contracts.
+
+3.remix ide and truffle suite is used to write and develop the smart contracts.
+
+4.solidity is similar some what to java.it supports oops concepts.
+---------------------------------------------------------------------------
+Usage of Ganache and Metamask:
+-----------------------------
+1.Metamask is a wallet provider, it is a browser extension, and transaction signer.
+2.Ganache is used to create a local blockchain network.
+	->it provides personal etherum blockchain for development and 	testing.
+	->it is fast and lightweight making it ideal for rapid development 	iterations.
+3.Metamask is used to sign transactions when deploying smart contracts to ganache or interacting with them during development.
+---------------------------------------------------------------------------
+Truffle compile and Truffle migrate commands:
+---------------------------------------------
+1.truffle compile:
+	->compiles solidity smart contracts.
+	->checks syntax,generates bytecode, and creates json artifacts.
+	->ensures contracts are in a deployable state.
+2.truffle migrate:
+	->deploys compiled contracts to Ethereum blockchain.
+	->executes migration scripts to manage deployment tasks.
